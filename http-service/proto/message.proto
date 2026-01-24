@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package message;
+
+option go_package = "grpc-service/proto;proto";
+
+service MessageService {
+  rpc SendMessage (MessageRequest) returns (MessageResponse);
+}
+
+message MessageRequest {
+  string text = 1;
+}
+
+message MessageResponse {
+  string reply = 1;
+}
