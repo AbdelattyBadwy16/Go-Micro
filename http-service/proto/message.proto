@@ -8,6 +8,7 @@ service MessageService {
   rpc SendMessage (MessageRequest) returns (MessageResponse);
 }
 
+
 message MessageRequest {
   string text = 1;
 }
