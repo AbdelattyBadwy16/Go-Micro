@@ -9,7 +9,6 @@ service MessageService {
 }
 
 
-s
 message MessageRequest {
   string text = 1;
 }
