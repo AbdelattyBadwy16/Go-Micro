@@ -5,6 +5,7 @@ import (
 	"log"
 	"net/http"
 	"time"
+	"test"
 
 	pb "github.com/abdelatty/grpc-service/proto"
 
@@ -18,6 +19,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	defer conn.Close()
+	// Hello
 
 	client := pb.NewMessageServiceClient(conn)
 
